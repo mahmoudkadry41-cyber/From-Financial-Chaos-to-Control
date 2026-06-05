@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f9fafb;
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+.navMain {
+  width: 17%;
+  background-color: antiquewhite;
+}
+.navMain1 {
+  height: 100vh;
+  width: 100%;
+  background-color: cornflowerblue;
+  position: fixed;
+}
+.mainBodey {
+  padding: 30px;
+  height: auto;
+  width: 83%;
+  background-color: aquamarine;
+  display: grid;
+  /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 200px; */
+  grid-template: 120px 160px 329px 400px 329px 400px 120px / repeat(3, 1fr);
+  grid-template-areas:
+    "head head head"
+    "currentBalance income expences"
+    "lastTransactions lastTransactions newActivities"
+    "lastTransactions lastTransactions monthlyBills"
+    "PaymentMethods incomeVsExpences budgetOverlook"
+    "PaymentMethods summary budgetOverlook"
+    ". . budgetOverlook";
+  gap: 20px;
+}
+
+.info {
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+.grid1 {
+  background-color: burlywood;
+  grid-area: head;
+  padding: 0 0 10px 0;
+}
+.grid2 {
+  background-color: rgb(126, 121, 115);
+  grid-area: currentBalance;
+}
+.grid3 {
+  background-color: rgb(70, 153, 70);
+  grid-area: income;
+}
+.grid4 {
+  background-color: rgb(156, 68, 80);
+  grid-area: expences;
+}
+.grid5 {
+  background-color: rgb(228, 131, 4);
+  grid-area: newActivities;
+}
+.grid6 {
+  background-color: rgb(105, 228, 23);
+  grid-area: lastTransactions;
+}
+.grid7 {
+  background-color: rgb(16, 160, 153);
+  grid-area: monthlyBills;
+}
+.grid8 {
+  background-color: rgb(22, 171, 197);
+  grid-area: budgetOverlook;
+}
+.grid9 {
+  background-color: rgb(75, 32, 175);
+  grid-area: incomeVsExpences;
+}
+.grid10 {
+  background-color: rgb(196, 10, 149);
+  grid-area: summary;
+}
+.grid11 {
+  background-color: rgb(186, 204, 21);
+  grid-area: PaymentMethods;
+}
+
+.headNav {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(206, 126, 22);
+  border-radius: 12px;
+  display: grid;
+  grid-template: 50px / repeat(10, 1fr);
+  grid-template-areas: "title connection search . . . . . notification profile";
+  gap: 10px;
+  align-content: center;
+  padding: 0 10px 0 10px;
+  box-sizing: border-box;
+}
+
+.title {
+  background-color: rgb(98, 79, 187);
+  grid-area: title;
+}
+.connection {
+  background-color: rgb(179, 114, 53);
+  grid-area: connection;
+}
+.search {
+  background-color: rgb(98, 22, 121);
+  grid-area: search;
+}
+.notification {
+  background-color: rgb(26, 139, 102);
+  grid-area: notification;
+}
+.profile {
+  background-color: rgb(50, 19, 105);
+  grid-area: profile;
+}
