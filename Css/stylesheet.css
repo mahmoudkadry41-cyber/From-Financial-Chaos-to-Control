@@ -7,6 +7,7 @@ body {
   background-color: #f9fafb;
   display: flex;
   flex-flow: row-reverse;
+justify-content: space-between;
 }
 
 .navMain {
@@ -15,10 +16,55 @@ body {
 }
 .navMain1 {
   height: 100vh;
-  width: 100%;
+  width: 240px;
   background-color: cornflowerblue;
   position: fixed;
 }
+
+.navMain1 .title{
+  width: 100%;
+  height: 100px;
+  background-color: #f0fdf4;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.navMain1 .title .title_icon {
+  background-color: #3e3ae0;
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navMain1 .title img {
+  width: 30px;
+  height: 30px;
+}
+.navMain1 .title-info {
+  display: flex;
+  flex-flow: column;
+  align-items: end;
+  justify-content: center;
+}
+.navMain1 .title h2 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.navMain1 title p {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: oklch(0.446 0.03 256.802);
+}
+
 .mainBodey {
   padding: 30px;
   height: auto;
@@ -37,6 +83,7 @@ body {
     "PaymentMethods summary budgetOverlook"
     ". . budgetOverlook";
   gap: 20px;
+  box-sizing: border-box;
 }
 
 .info {
@@ -92,34 +139,149 @@ body {
 .headNav {
   width: 100%;
   height: 100px;
-  background-color: rgb(206, 126, 22);
+  background-color: #fafcfe;
   border-radius: 12px;
   display: grid;
-  grid-template: 50px / repeat(10, 1fr);
-  grid-template-areas: "title connection search . . . . . notification profile";
+  grid-template: 50px / auto 35px 35px 1fr 1fr 1fr 1fr 1fr 70px 2fr;
+  grid-template-areas: "profile notification search . . . . .  connection title";
   gap: 10px;
   align-content: center;
   padding: 0 10px 0 10px;
   box-sizing: border-box;
+  align-items: center;
 }
 
-.title {
-  background-color: rgb(98, 79, 187);
+.headNav .title {
   grid-area: title;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+
 }
-.connection {
-  background-color: rgb(179, 114, 53);
+
+.headNav .connection {
+  background-color: #f0fdf4;
   grid-area: connection;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 30px;
+  border-radius: 5px;
+  border: #dbfce7 1px solid;
 }
-.search {
-  background-color: rgb(98, 22, 121);
+.headNav .search {
+  background-color: #f3f4f6;
   grid-area: search;
+  border: 1px #e6e8eb solid;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
 }
-.notification {
-  background-color: rgb(26, 139, 102);
+
+.headNav .search img {
+  width: 20px;
+}
+
+.headNav .notification {
+  background-color: #f3f4f6;
   grid-area: notification;
+  border: 1px #e6e8eb solid;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
 }
-.profile {
-  background-color: rgb(50, 19, 105);
+.headNav .notification img {
+  width: 20px;
+}
+.headNav .profile {
+  background-color: white;
   grid-area: profile;
+  border: 1px #e6e8eb solid;
+  border-radius: 12px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 10px;
 }
+.headNav .profile img{
+  height: 40px;
+  border-radius: 10px;
+}
+.headNav .profileDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+.headNav .profileDetails .profileName span{
+font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.headNav .profileDetails .profileStatus span{
+font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: oklch(0.551 0.027 264.364);
+}
+.headNav .title .title_icon {
+  background-color: #3e3ae0;
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headNav .title img {
+  width: 30px;
+  height: 30px;
+}
+.headNav .title-info {
+  display: flex;
+  flex-flow: column;
+  align-items: end;
+  justify-content: center;
+}
+.headNav .title h2 {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+    margin-bottom: 5px;
+
+}
+.headNav .title p {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  color: oklch(0.446 0.03 256.802);
+}
+
+.headNav .connection span {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  color: oklch(0.527 0.154 150.069);
+}
+
+.headNav1 .greenDot {
+  background-color: #02c951;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+
