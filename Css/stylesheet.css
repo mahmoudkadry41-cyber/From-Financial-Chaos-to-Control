@@ -58,6 +58,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
+
 }
 .navMain1 .title .title_icon {
   background-color: #3e3ae0;
@@ -166,12 +167,12 @@ body {
 
 .mainBodey {
   padding: 30px;
-  height: auto;
+  height: 2100px;
   width: 83%;
   display: grid;
   /* grid-template-columns: repeat(3,1fr);
     grid-template-rows: 200px; */
-  grid-template: 120px 160px 370px 500px 329px 400px 120px / repeat(3, 1fr);
+  grid-template: auto auto auto auto 400px 400px auto auto 900px 400px/ repeat(3, 1fr);
   grid-template-areas:
     "head head head"
     "currentBalance income expences"
@@ -598,6 +599,8 @@ body {
   flex-direction: column;
   justify-content: start;
   gap: 30px;
+  box-sizing: border-box;
+
 }
 .info .lttop {
   width: 100%;
@@ -620,9 +623,17 @@ body {
   line-height: 20px;
   cursor: pointer;
 }
+.scrollabletable{
+  width: 100%;
+  box-sizing: border-box;
+overflow-y: scroll;
+}
 .grid6 table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: auto;
+  min-width: 600px;
+
+
 }
 
 .grid6 table img {
@@ -1265,6 +1276,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 5px;
 }
 .cardconianer1 {
   width: 306px;

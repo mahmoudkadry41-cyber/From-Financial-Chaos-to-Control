@@ -15,81 +15,81 @@
 </head>
 
 <body>
-    <div class="navMain">
-        <nav class="navMain1">
+    <div class="navMain md-navMain lg-navMain sm-hide">
+        <nav class="navMain1 md-navMain1 lg-navMain1">
             <div class="title">
                 <div class=" title_icon"><img src="./images/icons/coins-solid-full.png" alt=""></div>
                 <div class="title-info">
                     <div>
-                        <h2>مدبّر</h2>
+                        <h2 class="md-hide lg-hide">مدبّر</h2>
                     </div>
                     <div>
-                        <p>إدارة أموالك بذكاء</p>
+                        <p class="md-hide lg-hide">إدارة أموالك بذكاء</p>
                     </div>
                 </div>
             </div>
             <div>
                 <ul class="links ttlimg">
-                    <li class="mainhome">
-                        <p>الصفحة الرئيسية</p>
+                    <li class="mainhome ">
+                        <p class="md-hide lg-hide">الصفحة الرئيسية</p>
                         <img src="./images/icons/house-solid-full.png" alt="">
                     </li>
                     <li>
-                        <p>المعاملات</p>
+                        <p class="md-hide lg-hide">المعاملات</p>
                         <img src="./images/icons/arrow-right-arrow-left-solid-full.png" alt="">
                     </li>
                     <li>
-                        <p>الميزانيات</p>
+                        <p class="md-hide lg-hide">الميزانيات</p>
                         <img src="./images/icons/chart-pie-solid-full.png" alt="">
                     </li>
                     <li>
-                        <p>المدخرات</p>
+                        <p class="md-hide lg-hide">المدخرات</p>
                         <img src="./images/icons/piggy-bank-solid.png" alt="">
                     </li>
                     <li>
-                        <p>الفواتير الشهرية</p>
+                        <p class="md-hide lg-hide">الفواتير الشهرية</p>
                         <img src="./images/icons/file-invoice-dollar-solid-full.png" alt="">
                     </li>
                 </ul>
             </div>
             <div>
                 <ul class="shortcut1 ttlimg">
-                    <span>إجراءات سريعة</span>
+                    <span class="md-hide lg-hide">إجراءات سريعة</span>
                     <li class="shtct1">
-                        <p>ارسال اموال</p>
+                        <p class="md-hide lg-hide">ارسال اموال</p>
                         <div><img src="./images/icons/paper-plane-solid-full.png" alt=""></div>
                     </li>
                     <li class="shtct2">
-                        <p>اضافة اموال</p>
+                        <p class="md-hide lg-hide">اضافة اموال</p>
                         <div><img src="./images/icons/plus-solid-full.png" alt=""></div>
                     </li>
                     <li class="shtct3">
-                        <p>دفع فاتورة</p>
+                        <p class="md-hide lg-hide">دفع فاتورة</p>
                         <div><img src="./images/icons/receipt-solid-full.png" alt=""></div>
                     </li>
                     <li class="shtct4">
-                        <p>استثمار</p>
+                        <p class="md-hide lg-hide">استثمار</p>
                         <div><img src="./images/icons/chart-line-solid-full.png" alt=""></div>
                     </li>
                 </ul>
             </div>
         </nav>
     </div>
-    <div class="mainBodey">
+    <div class="mainBodey lg-mainBodey md-mainBodey sm-mainBodey">
         <div class="info grid1">
             <div class="headNav ">
                 <div class="headNav1 title">
                     <div class=" title_icon"><img src="./images/icons/coins-solid-full.png" alt=""></div>
                     <div class="title-info">
                         <div>
-                            <h2>مدبّر</h2>
+                            <h2 >مدبّر</h2>
                         </div>
                         <div>
                             <p>إدارة أموالك بذكاء</p>
                         </div>
                     </div>
                 </div>
-                <div class="headNav1 connection">
+                <div class="headNav1 connection ">
                     <div><span>متصل</span></div>
                     <div class="greenDot"></div>
                 </div>
@@ -187,8 +187,8 @@
                 <h3>المعاملات الأخيرة</h3>
                 <span>عرض الكل</span>
             </div>
-
-            <table>
+            <div class="scrollabletable">
+            <table >
                 <thead>
                     <th>المبلغ</th>
                     <th>الحالة</th>
@@ -275,7 +275,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="stmain">-1400 جنية</td>
+                        <td class="stmain" lang="ar" dir="rtl">-1400 جنية</td>
                         <td>
                             <div class="ndmain"><span>مكتمل</span></div>
                         </td>
@@ -301,7 +301,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="stscondary">+2500 جنية</td>
+                        <td class="stscondary" lang="ar" dir="rtl">+2500 جنية</td>
                         <td>
                             <div class="ndmain"><span>مكتمل</span></div>
                         </td>
@@ -433,7 +433,7 @@
 
                 </tbody>
             </table>
-
+</div>
         </div>
         <div class="info grid7">
             <div class="lttop">
