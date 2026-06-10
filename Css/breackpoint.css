@@ -370,7 +370,7 @@
   display: grid;
   /* grid-template-columns: repeat(3,1fr);
     grid-template-rows: 200px; */
-  grid-template: auto / repeat(3, 1fr);
+  grid-template: auto auto 400px auto auto 900px 400px / repeat(3, 1fr);
   grid-template-areas:
     "head head head"
     "currentBalance income expences"
@@ -508,6 +508,16 @@
   }
 }
 @media screen and (min-width: 1280px) and (max-width: 1535px) {
+  
+.mainBodey .grid7 {
+  gap: 20px;
+}
+.mainBodey .grid6{
+  justify-content: space-between;
+}
+
+
+
   .xl-hide {
     display: none;
   }

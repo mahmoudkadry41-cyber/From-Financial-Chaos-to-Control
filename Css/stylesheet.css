@@ -627,11 +627,14 @@ body {
   width: 100%;
   box-sizing: border-box;
 overflow-y: scroll;
+height: 95%;
 }
 .grid6 table {
   width: 100%;
   border-collapse: auto;
   min-width: 600px;
+  height: 100%;
+  
 
 
 }
@@ -655,9 +658,9 @@ overflow-y: scroll;
   align-items: end;
   text-align: end;
   justify-items: end;
-  padding: 10px 0 10px 0;
-  height: 58px;
+
 }
+
 
 .stmain {
   font-family: "IBM Plex Sans Arabic", sans-serif;
@@ -755,6 +758,7 @@ overflow-y: scroll;
   justify-content: end;
   gap: 10px;
   text-align: end;
+  padding: 15px 0 15px 0;
 }
 .grid6 .ffth .fl img {
   width: 40px;
@@ -971,6 +975,14 @@ overflow-y: scroll;
 .othr4 img {
   height: 20px;
   width: 20px;
+}
+.othr4{
+  transition: .5s;
+}
+.othr4:hover{
+  box-shadow: rgba(0, 0, 0, 0.185) 0 2px 2px 0;
+  transform: translate(2px);
+  background-color: #F5F6F8;
 }
 .other4img {
   height: 40px;
